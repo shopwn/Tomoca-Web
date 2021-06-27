@@ -230,6 +230,33 @@ GO
 ALTER DATABASE [Tomoca_db] SET  READ_WRITE 
 GO
 
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[User](
+	[FirstName] [nvarchar](25) NOT NULL,
+	[LastName] [nvarchar](25) NOT NULL,
+	[Username] [varchar](20) NOT NULL,
+	[Email] [varchar](30) NOT NULL,
+	[Password] [varchar](50) NOT NULL,
+	[Phone] [varchar](15) NOT NULL,
+	[Country] [varchar](20) NULL,
+	[City] [varchar](20) NULL,
+	[Address] [varchar](20) NULL,
+UNIQUE NONCLUSTERED 
+(
+	[Username] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY],
+UNIQUE NONCLUSTERED 
+(
+	[Email] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
 --------------------- ADD DATA -------------------------------
 -------------- GENRES --------------
 INSERT INTO Genres VALUES (1, 'Action');
@@ -282,14 +309,14 @@ INSERT INTO Actors VALUES (22, 'Liz Cardenas', 'United States', '1945-11-11');
 
 INSERT INTO Actors VALUES (23, 'Ivana Baquero', 'Spain', '1994-06-11');
 INSERT INTO Actors VALUES (24, 'Doug Jones', 'United States', '1960-05-24');
-INSERT INTO Actors VALUES (25, 'Maribel Verdú', 'Spain', '1970-10-02');
+INSERT INTO Actors VALUES (25, 'Maribel Verdï¿½', 'Spain', '1970-10-02');
 
 INSERT INTO Actors VALUES (26, 'Natalie Portman', 'Jerusalem', '1981-06-09');
 INSERT INTO Actors VALUES (27, 'Tom Hiddleston', 'United Kingdom', '1981-02-09');
 
 INSERT INTO Actors VALUES (28, 'Taraji P. Henson', 'United States', '1970-09-11');
 INSERT INTO Actors VALUES (29, 'Octavia Spencer', 'United States', '1970-05-25');
-INSERT INTO Actors VALUES (30, 'Janelle Monáe', 'United States', '1985-12-01');
+INSERT INTO Actors VALUES (30, 'Janelle Monï¿½e', 'United States', '1985-12-01');
 
 INSERT INTO Actors VALUES (31, 'Carey Mulligan', 'United Kingdom', '1985-05-28');
 INSERT INTO Actors VALUES (32, 'Meryl Streep', 'United States', '1949-06-22');
@@ -303,9 +330,9 @@ INSERT INTO Actors VALUES (37, 'Jordan Peele', 'United States', '1979-02-21');
 INSERT INTO Actors VALUES (38, 'Lupita Nyong''o', 'Mexico', '1983-03-01');
 INSERT INTO Actors VALUES (39, 'Winston Duke', 'Tobago', '1986-11-15');
 
-INSERT INTO Actors VALUES (40, 'Adèle Haenel', 'France', '1989-02-11');
-INSERT INTO Actors VALUES (41, 'Noémie Merlant', 'France', '1988-11-27');
-INSERT INTO Actors VALUES (42, 'Luàna Bajrami', 'Kosovo', '2001-03-14');
+INSERT INTO Actors VALUES (40, 'Adï¿½le Haenel', 'France', '1989-02-11');
+INSERT INTO Actors VALUES (41, 'Noï¿½mie Merlant', 'France', '1988-11-27');
+INSERT INTO Actors VALUES (42, 'Luï¿½na Bajrami', 'Kosovo', '2001-03-14');
 
 INSERT INTO Actors VALUES (43, 'John Boyega', 'United Kingdom', '1992-03-17');
 INSERT INTO Actors VALUES (44, 'Jodie Whittaker', 'United Kingdom', '1982-05-17');
@@ -351,7 +378,7 @@ INSERT INTO Directors VALUES (15, 'Mary Harron', 'Canada', '1953-01-12');
 
 INSERT INTO Directors VALUES (16, 'Jordan Peele', 'United States', '1979-02-21');
 
-INSERT INTO Directors VALUES (17, 'Céline Sciamma', 'France', '1978-11-12');
+INSERT INTO Directors VALUES (17, 'Cï¿½line Sciamma', 'France', '1978-11-12');
 
 INSERT INTO Directors VALUES (18, 'Joe Cornish', 'United Kingdom', '1968-12-20');
 
@@ -375,7 +402,7 @@ INSERT INTO Movies VALUES (11, 'Hidden Figures', '2017-01-06', 7.8, 'Three femal
 INSERT INTO Movies VALUES (12, 'Suffragette', '2015-10-12', 6.9, 'In early 20th-century Britain, the growing suffragette movement forever changes the life of working wife and mother Maud Watts (Carey Mulligan). Galvanized by political activist Emmeline Pankhurst (Meryl Streep), Watts joins a diverse group of women who fight for equality and the right to vote. Faced with increasing police action, Maud and her dedicated suffragettes must play a dangerous game of cat-and-mouse, risking their jobs, homes, family and lives for a just cause.', '01:46:00');
 INSERT INTO Movies VALUES (13, 'American Psycho', '2000-04-14', 7.6, 'Patrick Bateman, a wealthy investment banker, hides his psychopathic ego from his friends. Later, his illogical fantasies escalate and he submits to an uncontrollable bloodlust.', '01:44:00');
 INSERT INTO Movies VALUES (14, 'Us', '2019-03-20', 6.8, 'Adelaide Wilson and her family are attacked by mysterious figures dressed in red. Upon closer inspection, the Wilsons realise that the intruders are exact lookalikes of them.', '02:01:00');
-INSERT INTO Movies VALUES (15, 'Portrait of a Lady on Fire', '2019-11-11', 8.1, 'France, 1770. Marianne, a painter, is commissioned to do the wedding portrait of Héloïse, a young woman who has just left the convent. Héloïse is a reluctant bride to be and Marianne must paint her without her knowing. She observes her by day, to paint her secretly.', '01:59:00');
+INSERT INTO Movies VALUES (15, 'Portrait of a Lady on Fire', '2019-11-11', 8.1, 'France, 1770. Marianne, a painter, is commissioned to do the wedding portrait of Hï¿½loï¿½se, a young woman who has just left the convent. Hï¿½loï¿½se is a reluctant bride to be and Marianne must paint her without her knowing. She observes her by day, to paint her secretly.', '01:59:00');
 INSERT INTO Movies VALUES (16, 'Attack the Block', '2011-05-13', 6.7, 'A group of valiant teenagers ventures out to battle a savage alien incursion. With the invasive species jeopardising their vicinity in Southern London, they fight to succeed in their mission.', '01:28:00');
 INSERT INTO Movies VALUES (17, 'Get Out', '2017-02-24', 7.7, 'Chris, an African-American man, decides to visit his Caucasian girlfriend''s parents during a weekend getaway. Although they seem normal at first, he is not prepared to experience the horrors ahead.', '01:44:00');
 INSERT INTO Movies VALUES (18, 'Spider-Man: Into the Spider-Verse', '2018-12-01', 8.4, 'After gaining superpowers from a spider bite, Miles Morales protects the city as Spider-Man. Soon, he meets alternate versions of himself and gets embroiled in an epic battle to save the multiverse.', '01:56:00');
