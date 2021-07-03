@@ -1,0 +1,13 @@
+﻿INSERT INTO NewsImage VALUES (N'https://i1-giaitri.vnecdn.net/2021/07/03/ngo-thanh-van-jpeg-9976-1625280105.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=yPTSIbElGXdEWxTxX3ZXEA', N'Ngô Thanh Vân (phải) và Charlize Theron thân thiết trên phim trường "The old guard". Ảnh: Veronica Ngô.')
+
+INSERT INTO NewsImage VALUES (N'https://i1-giaitri.vnecdn.net/2021/07/01/luca-2-2233-1625135861.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=nn_nHG-xe9sqp05hHxhGUQ', N'Phim hoạt hình "Luca" là chuyến phiêu lưu mùa hè của tình bạn. Ảnh: Disney.')
+INSERT INTO NewsImage VALUES (N'https://i1-giaitri.vnecdn.net/2021/07/01/luca-movie-9013-1625135861.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=7AaPXLKcrJuKCAtB5uPldg', N'Màu sắc văn hóa Italy thấm đẫm trong "Luca", như hình ảnh chiếc Vespa mơ ước của các cậu bé. Ảnh: Disney.') -- 2, 3
+
+INSERT INTO NewsImage VALUES (N'https://i1-giaitri.vnecdn.net/2021/07/01/ra-p-phim-ha-long-jpeg-3438-1625109493.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=EIUdkgVLxxojhCMe6Wc_4g', N'Hình ảnh rạp chiếu phim ở Hạ Long (Quảng Ninh). Ảnh: Hạ Long Drive-In.') --4
+INSERT INTO NewsImage VALUES (N'https://i1-giaitri.vnecdn.net/2021/07/01/chie-u-phim-ngoa-i-tro-i-jpeg-5807-9513-1625106964.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=BwX0WAVlQUy5HIpdwc8pIw', N'Khán giả xem "Lion King" tại một rạp phim ở Đức. Ảnh: AP.')
+
+INSERT INTO NewsImage VALUES (N'https://i1-giaitri.vnecdn.net/2021/07/01/tam-quoc1-8217-1625110120.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=RQX03TAEe3DZxFPPT8wiIQ', N'')
+INSERT INTO NewsImage VALUES (N'https://i1-giaitri.vnecdn.net/2021/07/01/phim2-jpeg-9525-1625110120.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=2v8_nkhZUBU13XZQ7J-V3Q', N'')
+
+INSERT INTO NewsImage VALUES (N'https://i1-giaitri.vnecdn.net/2021/06/30/lupin-1-7567-1625065980.png?w=680&h=0&q=100&dpr=1&fit=crop&s=mAQRzcwfhRroH8r_bShr0Q', N'Omar Sy (trái) và Antoine Gouy đóng vai hai người bạn thân, luôn đồng hành trong các phi vụ của "Lupin". Ảnh: Netflix.')
+INSERT INTO NewsImage VALUES (N'https://i1-giaitri.vnecdn.net/2021/06/30/lupin-2-3541-1625065981.png?w=680&h=0&q=100&dpr=1&fit=crop&s=iZETmJFKAVzbY5-fZgqDXw', N'Nhân vật Lupin trong mùa thú hai phải đối mặt nhiều thử thách liên tiếp đến từ cảnh sát và gã trùm tội phạm. Trước Lupin, Omar Sy từng nhận giải César 2012 dành cho nam diễn viên xuất sắc nhất với vai diễn Driss trong Intouchables (Những kẻ bên lề). Ngoài ra, anh cũng khẳng định được năng lực diễn xuất trong các tác phẩm nổi tiếng như X-Men: Days of Future Past (X-Men: tháng ngày của một tương lai đã qua), Jurassic World (Thế giới kỷ Jura) và Inferno (Hỏa ngục). Ảnh: Netflix.')
